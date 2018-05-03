@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: kafka-data-colletor
+  profiles:
+    active: local

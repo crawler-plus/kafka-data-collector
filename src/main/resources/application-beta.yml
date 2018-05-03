@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:~/h2/kafka-data-collector
+    driver-class-name: org.h2.Driver
+    username: root
+    password: root
+    platform: h2
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+server:
+  address: 127.0.0.1
+  port: 8888
+kafka:
+  host: 10.113.195.64
+  port: 9092
+zk:
+  host: 10.113.185.74
+  port: 22181
+logging:
+  level: info
